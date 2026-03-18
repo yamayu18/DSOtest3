@@ -2,16 +2,16 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>分院か、このままか。医院の方向性を整理する相談の入口｜院長同士の相談コミュニティ</title>
+  <title>経営に疲れてしまった院長へ。ひとりで抱えていませんか｜院長同士の相談コミュニティ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="分院や提携を勧める場ではありません。医院の今後を整理したい院長のための相談の入口。同規模医院のリアルな判断や事例が聞ける、営業なしのクローズドな場です。"
+    content="診療・採用・スタッフ管理・経営をひとりで抱えて疲れていませんか。医院は安定しているのに心が追いつかない院長のための、経営を一度整理する相談の入口。営業なしのクローズドな場です。"
   />
-  <meta property="og:title" content="分院か、このままか。医院の方向性を整理する相談の入口" />
+  <meta property="og:title" content="経営に疲れてしまった院長へ。ひとりで抱えていませんか" />
   <meta
     property="og:description"
-    content="分院や提携を勧める場ではありません。医院の今後を整理したい院長のための相談の入口。同規模医院のリアル・営業なし。"
+    content="診療・採用・スタッフ管理・経営をひとりで抱えて疲れていませんか。経営を一度整理する相談の入口。院長同士・営業なし。"
   />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ja_JP" />
@@ -39,10 +39,10 @@
       },
       {
         "@type": "Question",
-        "name": "必ず提携や統合を勧められますか？",
+        "name": "相談したら、何かを売り込まれませんか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "いいえ。分院や提携を勧める場ではありません。医院の今後の方向性を、院長同士のリアルな話を聞きながら一緒に整理する相談の入口です。"
+          "text": "いいえ。ここは何かを売る場ではなく、院長同士で「いま抱えている負担」と「このままでいいのか」を整理する相談の入口です。営業・勧誘はありません。"
         }
       },
       {
@@ -433,6 +433,11 @@
         margin: 0 auto;
       }
     }
+    /* スマホのみで自然に改行したい箇所 */
+    .br-sp { display: none; }
+    @media (max-width: 767px) {
+      .br-sp { display: inline; }
+    }
     .hero-inner {
       display: flex;
       flex-direction: column;
@@ -712,7 +717,7 @@
       .outcome-grid { grid-template-columns: 1fr; }
     }
 
-    /* 他との違い：コンサル・M&Aと私たちを並べて比較 */
+    /* 他との違い：一般論 vs 整理の場 */
     .diff-intro { margin-top: 8px; font-size: 14px; color: var(--text-sub); margin-bottom: 14px; }
     .diff-compare {
       display: grid;
@@ -1463,85 +1468,89 @@
     </div>
   </header>
 
-  <!-- ①ファーストビュー：セミナー後の「分院するか、このままか」で自分ごと化 -->
+  <!-- ①ファーストビュー：経営に疲れている状態（共感） -->
   <section class="hero hero-banner-section">
     <div class="container hero-banner-wrap">
-      <img src="assets/hero-banner-no-1oku.png" alt="外部院長限定 非公開の経営相談 医院の次の判断を一人で抱えていませんか" class="hero-banner-img" width="1200" height="auto" />
-      <p class="lp-text" style="margin-top:14px;text-align:center;font-size:14px;color:var(--text-sub);">分院や提携を勧める場ではありません。医院の<span class="key">方向性を整理する</span>相談の入口です。</p>
+      <img src="assets/hero-banner-replace.png" alt="経営に疲れてしまった院長へ。ひとりで抱えていませんか。院長限定・非公開の相談コミュニティ" class="hero-banner-img" width="1200" height="auto" />
+      <p class="lp-text" style="margin-top:14px;text-align:center;font-size:14px;color:var(--text-sub);">ここは、院長が<span class="key">一度立ち止まって整理する</span>ための相談の入口です。営業や勧誘はありません。</p>
     </div>
   </section>
 
-  <!-- ②共感：医院は安定しているが、方向性を考え始めている・同規模のリアルが知りたい -->
+  <!-- ②共感：経営に疲れている状態（共感）→③このままでいいのか（不安） -->
   <section style="background:#fff;">
     <div class="container section-inner">
-      <h2 class="section-title section-title-lg section-title-hero">セミナーで、<span class="key">「一度、方向性を整理したい」</span>と感じませんでしたか？</h2>
-      <p class="lp-text" style="margin-top:12px;font-size:15px;color:var(--text-sub);">医院は安定しているけれど、診療・経営・スタッフをすべて抱える日々に、ふと考えることが増えていませんか。</p>
+      <h2 class="section-title section-title-lg section-title-hero">医院は回っているのに、<br /><span class="key">院長だけが苦しい</span>。そんな状態になっていませんか？</h2>
+      <p class="lp-text" style="margin-top:12px;font-size:15px;color:var(--text-sub);">診療、採用、スタッフ管理、クレーム対応、数字のこと。</p>
+      <p class="lp-text" style="margin-top:8px;font-size:15px;color:var(--text-sub);">すべてを抱えていると、いつの間にか「休めない」「決められない」状態になりがちです。</p>
       <ul class="check-box-list" style="margin-top:14px;">
-        <li class="check-box-item"><span>このまま単院で続けるべきか、分院を考えるべきか、判断がつかない</span></li>
-        <li class="check-box-item"><span>将来的な継承も、いつ・どう考えればいいか見えない</span></li>
-        <li class="check-box-item"><span>同じ規模の院長は、どう判断しているのか知りたい</span></li>
-        <li class="check-box-item"><span>成功事例や一般論ではなく、リアルな経営事例が聞きたい</span></li>
-        <li class="check-box-item"><span>営業されたくない。院長同士で相談できる場がほしい</span></li>
+        <li class="check-box-item"><span>スタッフや採用のことまで全部自分で背負っていて、ずっと気が抜けない</span></li>
+        <li class="check-box-item"><span>医院は安定しているのに、院長自身が疲れてしまっている</span></li>
+        <li class="check-box-item"><span>「このままでいいのか」と思うが、誰にも相談できない</span></li>
+        <li class="check-box-item"><span>判断材料が足りず、優先順位がつけられない</span></li>
+        <li class="check-box-item"><span>営業や売り込みではなく、安心して話せる場がほしい</span></li>
       </ul>
-      <p class="lp-text" style="margin-top:18px;font-size:15px;color:var(--text-main);font-weight:700;">ここは<span class="key-bg">分院や提携を勧める場ではなく</span>、医院の今後を一緒に整理する相談の入口です。</p>
+      <p class="lp-text" style="margin-top:18px;font-size:15px;color:var(--text-main);font-weight:700;">いま必要なのは「正解」ではなく、<span class="key-bg">頭と心の中を一度整理する時間</span>かもしれません。</p>
     </div>
   </section>
 
-  <!-- ③相談で何が得られるか：方向性整理・同規模のリアル（営業なし） -->
+  <!-- ④一度整理する必要性 -->
   <section style="background:var(--bg-gray);">
     <div class="container section-inner">
-      <h2 class="section-title section-title-lg section-title-hero">相談に来ると、<span class="key">方向性を整理する材料</span>が揃います</h2>
-      <p class="lp-text" style="margin-top:4px;font-size:14px;color:var(--text-sub);">同規模医院のリアルな判断や失敗事例も含めて共有。勧誘や営業は一切ありません。</p>
+      <h2 class="section-title section-title-lg section-title-hero">「がんばり続ける」より先に、<br /><span class="key">整理して見直す</span>ほうが早いことがあります</h2>
+      <p class="lp-text" style="margin-top:4px;font-size:14px;color:var(--text-sub);">状況が複雑なほど、疲れたまま意思決定すると後悔が増えます。</p>
+      <p class="lp-text" style="margin-top:8px;font-size:14px;color:var(--text-sub);">まずは現状と負担を言語化し、優先順位をつけるところから始めませんか。</p>
       <div class="outcome-grid">
-        <div class="outcome-item"><span class="label">単院・分院</span><span class="desc">このまま続けるか、分院を検討するかの判断材料が分かる</span></div>
-        <div class="outcome-item"><span class="label">組織・運営</span><span class="desc">任せ方や生産性の残し方の具体例が参考になる</span></div>
-        <div class="outcome-item"><span class="label">統合・継承</span><span class="desc">他院がどう判断・実行したかのリアルが聞ける</span></div>
-        <div class="outcome-item"><span class="label">医院の今後</span><span class="desc">10年後を見据えて方向性を決める材料が揃う</span></div>
+        <div class="outcome-item"><span class="label">負担の棚卸し</span><span class="desc">何が一番しんどいのか、原因を言語化できる</span></div>
+        <div class="outcome-item"><span class="label">優先順位</span><span class="desc">「今やること／やらないこと」が整理できる</span></div>
+        <div class="outcome-item"><span class="label">任せ方</span><span class="desc">院長が抱えすぎないための現実的な分担が見える</span></div>
+        <div class="outcome-item"><span class="label">次の一手</span><span class="desc">短期で整えるポイントと、中長期の方向性が見える</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ④他との違い：営業・一般論ではなく院長同士のリアル -->
+  <!-- ⑤同じ悩みを持つ院長の存在 → ⑥相談できる場の提示（営業感をなくす） -->
   <section style="background:#fff;">
     <div class="container section-inner">
-      <h2 class="section-title section-title-lg section-title-hero">コンサル・M&A会社との違い</h2>
-      <p class="diff-intro">セミナーやネットでは成功事例や一般論が多く、同規模医院のリアルな判断や失敗事例はなかなか聞けません。ここは「売る前提」ではなく、<span class="key">院長同士で方向性を整理する場</span>に絞っています。</p>
+      <h2 class="section-title section-title-lg section-title-hero">同じように抱えている院長は、実は少なくありません</h2>
+      <p class="diff-intro">外からは順調に見えても、院長の内側は限界に近い。そんな声は珍しくありません。</p>
+      <p class="diff-intro" style="margin-top:10px;">ここは誰かに評価される場ではなく、<span class="key">院長同士で「整理」するための場</span>です。</p>
       <div class="diff-compare">
         <div class="diff-other">
-          <span class="diff-other-label">コンサル</span>
-          <span class="diff-other-desc">ノウハウ・手法の提供が中心。一般論になりやすく、営業につながりがち。</span>
+          <span class="diff-other-label">よくある情報</span>
+          <span class="diff-other-desc">一般論や成功談が多く、いま抱えている負担の整理にはつながりにくい。</span>
         </div>
         <div class="diff-other">
-          <span class="diff-other-label">M&A会社</span>
-          <span class="diff-other-desc">売却・譲渡が前提。大口・多店舗向けの話になりがち。</span>
+          <span class="diff-other-label">ひとりで考える</span>
+          <span class="diff-other-desc">結局、判断も説明も全部院長ひとり。疲れが増えるほど、決められなくなる。</span>
         </div>
       </div>
       <div class="diff-us-wrap">
         <div class="diff-us">
-          <span class="diff-us-label">私たちの場</span>
+          <span class="diff-us-label">このコミュニティ</span>
           <ul class="diff-us-list">
-            <li>院長同士のリアルな共有</li>
-            <li>数字・事例ベースで判断材料を揃える</li>
-            <li>営業・勧誘なし</li>
-            <li>同規模医院に限定</li>
+            <li>院長同士で、抱えていることを言語化できる</li>
+            <li>優先順位と「今やらないこと」まで整理できる</li>
+            <li>営業・勧誘なし（売るための場ではありません）</li>
+            <li>非公開・少人数で、安心して話せる</li>
           </ul>
-          <p class="diff-us-note">分院や提携を勧める「売る場」ではなく、<span class="key">「医院の方向性を整理する相談の入口」</span>だけにしています。</p>
+          <p class="diff-us-note">目的は、何かを決めさせることではなく、<span class="key">院長が一度立ち止まって整理すること</span>です。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ⑤よくある相談テーマ：セミナー→相談の流れを明示 -->
+  <!-- よくある相談テーマ -->
   <section style="background:var(--bg-gray);">
     <div class="container section-inner">
       <h2 class="section-title section-title-lg section-title-hero">よくある相談テーマ</h2>
-      <p class="lp-text" style="margin-top:6px;font-size:14px;color:var(--text-sub);">セミナーで「方向性を整理したい」と感じた方に、<span class="key">無料相談</span>をご案内しています。勧誘はしません。<span class="key-bg">まずは話を聞くだけ</span>で大丈夫です。</p>
+      <p class="lp-text" style="margin-top:6px;font-size:14px;color:var(--text-sub);">「何をどう整理すればいいか分からない」状態からでも大丈夫です。</p>
+      <p class="lp-text" style="margin-top:8px;font-size:14px;color:var(--text-sub);"><span class="key">無料相談</span>で、まずは現状の棚卸しから一緒に始めます。</p>
       <ul class="bullet-list theme-list">
-        <li class="bullet-item"><span class="bullet-dot"></span><span>このまま単院で続けるか、分院を検討するか、判断材料が欲しい</span></li>
-        <li class="bullet-item"><span class="bullet-dot"></span><span>採用・スタッフ体制に悩んでいる</span></li>
-        <li class="bullet-item"><span class="bullet-dot"></span><span>次世代の幹部・院長候補をどう育てるか</span></li>
-        <li class="bullet-item"><span class="bullet-dot"></span><span>提携・統合・継承を選ぶべきか、他院のリアルを聞きたい</span></li>
-        <li class="bullet-item"><span class="bullet-dot"></span><span>医院の今後10年をどう描くか、一度整理したい</span></li>
+        <li class="bullet-item"><span class="bullet-dot"></span><span>院長が抱えすぎていて、何から手をつければいいか分からない</span></li>
+        <li class="bullet-item"><span class="bullet-dot"></span><span>採用・スタッフの悩みが続き、ずっと気が休まらない</span></li>
+        <li class="bullet-item"><span class="bullet-dot"></span><span>任せたいのに任せられない／任せ方が分からない</span></li>
+        <li class="bullet-item"><span class="bullet-dot"></span><span>「このままでいいのか」という不安を、誰にも話せない</span></li>
+        <li class="bullet-item"><span class="bullet-dot"></span><span>方向性を決める前に、いまの状態を一度整理したい</span></li>
       </ul>
     </div>
   </section>
@@ -1562,7 +1571,10 @@
             <p class="organizer-role">医療法人百花繚乱　理事長</p>
           </div>
           <p class="organizer-desc">
-            医療法人百花繚乱として歯科医院を7院経営。自らも院長として現場の判断や経営の悩みを経験してきました。分院や提携を勧める場ではなく、「院長同士が医院の方向性を整理できる相談の入口」として、このコミュニティを立ち上げています。同規模医院のリアルな判断や事例を共有し、営業なしで一緒に整理するサポートをしています。
+            医療法人百花繚乱として歯科医院を7院経営。自らも院長として、現場と経営を抱える負担や迷いを経験してきました。
+          </p>
+          <p class="organizer-desc" style="margin-top:10px;">
+            ここは「誰かに正解を出してもらう場」ではなく、<span class="key">院長同士で抱えていることを整理できる相談の入口</span>として立ち上げています。営業や勧誘はなく、安心して話せる場づくりを大切にしています。
           </p>
         </div>
       </div>
@@ -1575,24 +1587,25 @@
       <div class="contents-row">
         <div class="contents-copy">
           <h2 class="section-title section-title-lg section-title-hero">コミュニティについて</h2>
-          <p class="lp-text community-intro" style="font-size:15px;color:var(--text-main);">セミナーに参加した院長だけが入れる、クローズドな場です。分院や提携の勧誘はなく、院長同士で医院の方向性を安心して話し合えます。</p>
+          <p class="lp-text community-intro" style="font-size:15px;color:var(--text-main);">セミナーに参加した院長だけが入れる、クローズドな場です。</p>
+          <p class="lp-text" style="margin-top:8px;font-size:14px;color:var(--text-sub);">売り込みはなく、院長同士で「抱えていること」を安心して整理できます。</p>
           <p class="lp-text" style="margin-top:2px;font-size:14px;color:var(--text-sub);">中では、次のようなことをしています。</p>
           <div class="community-items" style="margin-top:10px;">
             <div class="community-item">
               <span class="label">月1回の動画配信</span>
-              <span class="desc">経営判断や分院・統合の考え方を解説する動画。毎月1本配信で、過去分も視聴できます。</span>
+              <span class="desc">「抱えすぎ」をほどくための考え方や、判断の前に整理するポイントを解説。毎月1本配信で、過去分も視聴できます。</span>
             </div>
             <div class="community-item">
-              <span class="label">分院・統合検討用テンプレート</span>
-              <span class="desc">「分院を出すか」「統合条件を比べるか」を整理するときのチェックシート。数字を埋めて、院内で判断材料として使えます。</span>
+              <span class="label">経営の棚卸しテンプレート</span>
+              <span class="desc">「何が負担か」「何が詰まっているか」を整理するチェックシート。埋めるだけで、優先順位が見えやすくなります。</span>
             </div>
             <div class="community-item">
               <span class="label">実際のケース共有</span>
-              <span class="desc">参加院長や運営が、成功・失敗や統合後の実態を匿名で共有。他院のリアルを参考にできます。</span>
+              <span class="desc">参加院長や運営が、迷ったときの判断や「抱えすぎ」から抜け出す工夫を匿名で共有。ひとりで抱え込まないためのヒントになります。</span>
             </div>
             <div class="community-item">
               <span class="label">希望者のみ個別相談・ケースディスカッション</span>
-              <span class="desc">自分の医院の数字や状況を持ち込んで、分院・統合の選択肢を一緒に整理できます。希望者のみ。</span>
+              <span class="desc">自分の医院の状況を持ち込み、負担の棚卸しから優先順位づけまで一緒に整理できます。希望者のみ。</span>
             </div>
           </div>
         </div>
@@ -1607,23 +1620,25 @@
   <section style="background:var(--bg-gray);" aria-label="対象院長">
     <div class="container section-inner">
       <h2 class="section-title section-title-lg section-title-hero">こんな院長のための場です</h2>
-      <p class="lp-text" style="margin-top:12px;font-size:15px;color:var(--text-main);font-weight:600;">医院は安定しているが、<span class="key-bg">単院・分院・継承など、今後の方向性を一度整理したい</span>と感じている院長。</p>
-      <p class="lp-text" style="margin-top:8px;font-size:14px;color:var(--text-sub);">同じ規模の院長のリアルな判断や事例を聞きたい方、営業されたくない方に合っています。売却や勧誘だけが目的の方は対象外です。</p>
+      <p class="lp-text" style="margin-top:12px;font-size:15px;color:var(--text-main);font-weight:600;">医院は安定しているのに、<span class="key-bg">院長自身が疲れを感じ始めている</span>方。</p>
+      <p class="lp-text" style="margin-top:8px;font-size:14px;color:var(--text-sub);">経営を拡大したいというより、まずは一度立ち止まって整理したい。</p>
+      <p class="lp-text" style="margin-top:6px;font-size:14px;color:var(--text-sub);">相談相手がいない。そんな院長に合っています。</p>
     </div>
   </section>
 
   <!-- 相談に来ると手に入るもの：方向性整理・営業なし -->
   <section style="background:#fff;">
     <div class="container section-inner">
-      <h2 class="section-title section-title-lg section-title-hero">相談に来ると、手に入るもの</h2>
+      <h2 class="section-title section-title-lg section-title-hero">相談で整理できること</h2>
       <ul class="check-box-list" style="margin-top:12px;">
-        <li class="check-box-item"><span>単院・分院・継承を選ぶときの判断材料が分かる</span></li>
-        <li class="check-box-item"><span>同規模医院のリアルな判断や失敗事例が聞ける</span></li>
-        <li class="check-box-item"><span>数字や事例ベースで方向性を整理できる</span></li>
-        <li class="check-box-item"><span>院内で使える資料・テンプレートが手に入る</span></li>
+        <li class="check-box-item"><span>いま抱えている負担を言語化し、優先順位をつけられる</span></li>
+        <li class="check-box-item"><span>「院長が抱えすぎない」ための現実的な一手が見える</span></li>
+        <li class="check-box-item"><span>判断の前に整理すべきポイントが分かる</span></li>
+        <li class="check-box-item"><span>院内共有に使える棚卸しテンプレートが手に入る</span></li>
         <li class="check-box-item"><span>営業されない、院長同士の相談先が1つできる</span></li>
       </ul>
-      <p class="lp-text" style="margin-top:20px;font-size:15px;color:var(--text-main);line-height:1.65;">「分院するか・このままか」を自分で決める材料が揃います。<span class="key">まずは話を聞くだけでも大丈夫。</span><span class="key-bg">勧誘・営業は一切しません</span>。</p>
+      <p class="lp-text" style="margin-top:20px;font-size:15px;color:var(--text-main);line-height:1.65;">無理に何かを決める場ではありません。</p>
+      <p class="lp-text" style="margin-top:8px;font-size:15px;color:var(--text-main);line-height:1.65;"><span class="key">まずは話を聞くだけ</span>でも大丈夫です。<span class="key-bg">勧誘・営業は一切しません</span>。</p>
     </div>
   </section>
 
@@ -1632,8 +1647,9 @@
     <div class="container section-inner">
       <div class="why-limited-box">
         <span class="why-limited-label">なぜ無料で、限定にしているのか</span>
-        <h3 class="why-limited-title">セミナーで「方向性を整理したい」と感じてくださった方に、まずは相談の入口として届けたいから。</h3>
-        <p class="why-limited-desc">分院や提携を勧める場ではなく、院長同士が<span class="key">方向性を整理する場</span>にしていきたい。だから人数を絞り、セミナーからつながりのある方にだけご案内しています。</p>
+        <h3 class="why-limited-title">「経営に疲れた院長が、安心して整理できる場」を守るために、無料・限定にしています。</h3>
+        <p class="why-limited-desc">ここは何かを売るための場ではありません。</p>
+        <p class="why-limited-desc" style="margin-top:8px;">院長同士が<span class="key">安心して本音を話せる</span>ように、人数を絞り、セミナーからつながりのある方にだけご案内しています。</p>
       </div>
     </div>
   </section>
@@ -1642,7 +1658,7 @@
   <section id="cta-mid" class="cta-center" style="padding:28px 20px;">
     <div class="container" style="text-align:center;max-width:400px;margin:0 auto;">
       <p style="color:rgba(255,255,255,0.95);font-size:14px;margin:0 0 8px 0;">話を聞くだけ・質問だけでも歓迎です。勧誘はしません。</p>
-      <h2 class="section-title section-title-lg" style="color:#fff;margin-bottom:16px;text-shadow:0 1px 2px rgba(0,0,0,0.2);">医院の方向性を整理する、<strong style="font-weight:800;">相談の入口</strong></h2>
+      <h2 class="section-title section-title-lg" style="color:#fff;margin-bottom:16px;text-shadow:0 1px 2px rgba(0,0,0,0.2);">院長が一度立ち止まって整理する、<strong style="font-weight:800;">相談の入口</strong></h2>
       <button type="button" class="btn btn-cta-large" data-scroll="form">無料で相談する</button>
       <div class="cta-or" style="margin:16px 0;font-size:13px;color:rgba(255,255,255,0.9);">または</div>
       <button type="button" class="quiz-cta-mid-btn" style="background:#fff;color:#1e293b;border:2px solid #1e293b;width:100%;padding:14px 20px;font-size:15px;font-weight:700;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;" id="quiz-cta-mid-btn" data-scroll="quiz-section" data-quiz-open="true" aria-label="院長向け 3分診断を受ける">
@@ -1681,12 +1697,14 @@
         </div>
         <div class="accordion-item">
           <button class="accordion-btn" type="button" aria-expanded="false">
-            <span>必ず提携や統合を勧められますか？</span>
+            <span>相談したら、何かを売り込まれませんか？</span>
             <span class="accordion-icon">▼</span>
           </button>
           <div class="accordion-panel">
             <div class="accordion-panel-inner">
-              いいえ。分院や提携を勧める場ではありません。医院の今後の方向性（単院で続けるか、分院を検討するか、継承を考えるかなど）を、院長同士のリアルな話を聞きながら一緒に整理する相談の入口です。
+              いいえ。ここは何かを売る場ではありません。
+              <br /><br />
+              院長同士で「いま抱えている負担」と「このままでいいのか」を整理する相談の入口です。営業・勧誘はありません。
             </div>
           </div>
         </div>
@@ -1710,7 +1728,9 @@
     <div class="container section-inner">
       <div>
         <h2 class="section-title section-title-lg">無料相談・お申し込み</h2>
-        <p class="lp-text" style="margin-top:8px;font-size:14px;color:var(--text-sub);">分院や提携の勧誘はありません。医院の方向性を一緒に整理する相談の入口です。話を聞くだけでも大丈夫です。</p>
+        <p class="lp-text" style="margin-top:8px;font-size:14px;color:var(--text-sub);">売り込みはありません。</p>
+        <p class="lp-text" style="margin-top:6px;font-size:14px;color:var(--text-sub);">院長が一度立ち止まって、いまの状態を整理する相談の入口です。</p>
+        <p class="lp-text" style="margin-top:6px;font-size:14px;color:var(--text-sub);">話を聞くだけでも大丈夫です。</p>
       </div>
 
       <form id="lead-form" class="form-wrapper" novalidate>
@@ -1765,12 +1785,12 @@
                 <span>単院の生産性・利益率をもう一段引き上げたい</span>
               </label>
               <label class="checkbox-card">
-                <input type="checkbox" class="checkbox-card-input" name="challenges" value="分院展開を検討しているが、踏み切る判断材料が足りない" />
-                <span>分院展開を検討しているが、踏み切る判断材料が足りない</span>
+                <input type="checkbox" class="checkbox-card-input" name="challenges" value="院長が抱えすぎていて、ずっと気が抜けない" />
+                <span>院長が抱えすぎていて、ずっと気が抜けない</span>
               </label>
               <label class="checkbox-card">
-                <input type="checkbox" class="checkbox-card-input" name="challenges" value="提携・統合のオファーが来ており、整理が追いついていない" />
-                <span>提携・統合のオファーが来ており、整理が追いついていない</span>
+                <input type="checkbox" class="checkbox-card-input" name="challenges" value="スタッフ・採用の悩みが続き、院内が落ち着かない" />
+                <span>スタッフ・採用の悩みが続き、院内が落ち着かない</span>
               </label>
               <label class="checkbox-card">
                 <input type="checkbox" class="checkbox-card-input" name="challenges" value="スタッフ・幹部との情報共有や説明の仕方に悩んでいる" />
@@ -1794,15 +1814,15 @@
             <div class="radio-grid">
               <label class="radio-card">
                 <input type="radio" class="radio-card-input" name="intent" value="single" checked />
-                <span>単院強化を軸に考えたい</span>
+                <span>まずは現状を整理して、優先順位をつけたい</span>
               </label>
               <label class="radio-card">
                 <input type="radio" class="radio-card-input" name="intent" value="multi" />
-                <span>分院展開を現実的な選択肢として検討したい</span>
+                <span>院長が抱えすぎない体制づくりを相談したい</span>
               </label>
               <label class="radio-card">
                 <input type="radio" class="radio-card-input" name="intent" value="partnership" />
-                <span>提携・統合も含めて、次の10年の選択肢を整理したい</span>
+                <span>このままでいいのか不安なので、方向性を一度整理したい</span>
               </label>
             </div>
           </div>
@@ -1816,7 +1836,7 @@
       </form>
 
       <p style="margin-top:10px;font-size:11px;color:var(--muted);max-width:520px;">
-        ※ 実際の提携スキームへの接続や資料DLリンクは、本番環境で差し替え予定です。
+        ※ 記載内容は仮です。実運営に合わせて差し替えください。
       </p>
     </div>
   </section>
@@ -1833,7 +1853,7 @@
           <div class="accordion-panel" id="quiz-accordion-panel">
             <div class="accordion-panel-inner" style="padding:16px 14px;">
               <p style="margin:0 0 16px 0;font-size:13px;color:var(--text-sub);">
-                「単院強化」「分院展開」「提携・統合」のうち、今の状況に近い選択肢を簡易的に整理します。
+                「いま何が一番しんどいのか」「何から整えるべきか」を、簡易的に整理します。
               </p>
               <div id="quiz-questions" class="quiz-questions"></div>
               <div style="margin-top:16px;text-align:center;">
@@ -1868,12 +1888,12 @@
         title: "主催者紹介",
         name: "松岡 督明",
         role: "医療法人百花繚乱　理事長",
-        description: "歯科医院を7医院経営。院長同士が安心して話し合える場づくりと、次の一手（分院・提携・統合）を一緒に整理するサポートをしています。"
+        description: "歯科医院を7医院経営。院長同士が安心して話し合える場づくりと、「抱えすぎ」をほどくための整理を一緒に進めるサポートをしています。"
       },
       hero: {
         badge: "外部院長向け 少人数コミュニティ",
         title: "外部院長向け｜院長相談コミュニティ",
-        subtitle: "院長同士で現場の答えを共有し、必要な人は「分院・提携・統合」まで最短で進めるためのオンラインサロン。",
+        subtitle: "院長同士で「抱えていること」を整理し、ひとりで決めきれない状態から抜け出すためのクローズドな場です。",
         primaryCta: "無料で参加する",
         secondaryCta: "院長向け3分診断を受ける"
       },
@@ -1889,34 +1909,34 @@
         title: "コミュニティサロンで得られること",
         items: [
           "同規模クリニックの「意思決定の裏側」まで共有される",
-          "分院展開・提携・統合を検討する際の判断軸がクリアになる",
+          "抱えすぎをほどくための優先順位と判断軸がクリアになる",
           "月1セッションで「考える時間」を半ば強制的に確保できる",
           "希望者のみ、個別に次の一手を一緒に設計できる",
           "スタッフ・幹部との共有に使えるテンプレートを入手できる",
-          "無理に分院・提携に誘導されない安心感のある場で話せる"
+          "無理に何かへ誘導されない安心感のある場で話せる"
         ]
       },
       contents: {
         title: "中で提供しているコンテンツ",
         points: [
           "月1回の動画配信",
-          "分院計画・統合検討時に使えるテンプレート類",
-          "実際のケース共有（成功/失敗・統合後のリアル）",
+          "経営の棚卸し・優先順位づけに使えるテンプレート類",
+          "実際のケース共有（抱えすぎから抜け出す工夫）",
           "希望者のみの個別相談・ケースディスカッション"
         ]
       },
       audience: {
         title: "参加いただきたい院長像",
         goodFit: [
-          "単院の生産性をもう一段引き上げたい",
-          "分院展開を検討しているが、踏み切る判断材料が足りない",
-          "提携・統合のオファーが来ており、冷静に比較検討したい",
-          "売却前提ではなく「次の10年の選択肢」を整理したい"
+          "診療・採用・スタッフ管理・経営をひとりで抱えて疲れを感じている",
+          "医院は安定しているが、院長自身の負担が大きい",
+          "「このままでいいのか」を一度整理したい",
+          "営業ではなく、安心して相談できる場がほしい"
         ],
         notFit: [
-          "短期的な売却価格だけを最大化したい",
-          "スタッフの雇用やカルテ継続には関心がない",
-          "強い営業や即決を前提とした場を求めている"
+          "強い営業や即決を前提とした場を求めている",
+          "誰かに答えだけを出してほしい（整理のプロセスに関心がない）",
+          "他者の守秘に配慮できない"
         ]
       },
       safety: {
@@ -1933,7 +1953,7 @@
         steps: [
           "無料でコミュニティサロンに参加（セミナー参加者限定）",
           "院長向け3分診断で現在地と適性を整理",
-          "必要な方のみ、個別相談で「分院/提携/統合」の具体検討へ"
+          "必要な方のみ、個別相談で「負担の棚卸し→優先順位→次の一手」を一緒に整理"
         ]
       },
       faq: {
@@ -1941,7 +1961,7 @@
         items: [
           { question: "参加費はいくらですか？", answer: "現在はセミナー参加者限定で無料招待としています。将来的に有料化の可能性はありますが、その際も事前にご案内いたします。" },
           { question: "匿名での参加は可能ですか？", answer: "オンライン上では表示名を変更していただくことは可能です。ただし、守秘の観点から運営側では実名・クリニック名を把握させていただきます。" },
-          { question: "必ず提携や統合を勧められますか？", answer: "いいえ。分院や提携を勧める場ではありません。医院の今後の方向性を、院長同士のリアルな話を聞きながら一緒に整理する相談の入口です。" },
+          { question: "相談したら、何かを売り込まれませんか？", answer: "いいえ。ここは何かを売る場ではなく、院長同士で「いま抱えている負担」と「このままでいいのか」を整理する相談の入口です。営業・勧誘はありません。" },
           { question: "共有した内容が外部に漏れないか心配です。", answer: "参加時に守秘ルールへの同意をお願いしています。また、個別の事例共有の際も、特定可能な情報は伏せていただく形を基本としています。" }
         ]
       }
@@ -1949,34 +1969,34 @@
 
     var diagnosisResultCopy = {
       A: {
-        title: "単院強化タイプ",
-        summary: "今は無理に分院や統合に進むよりも、単院の収益性と組織基盤を高めるフェーズです。",
+        title: "整理・棚卸し優先タイプ",
+        summary: "いまは新しい打ち手よりも、負担の棚卸しと優先順位づけが先です。まずは「何を抱えているか」を言語化すると、次の一手が見えやすくなります。",
         actions: [
-          "診療・オペの生産性指標を整理し、ボトルネックを特定する",
-          "スタッフ構成と評価制度を「単院最適」に整える",
-          "単院での利益最大化シナリオと、その先の選択肢を描いておく"
+          "いまの負担（診療/採用/人/数字）を棚卸しし、詰まりを特定する",
+          "「今やること／やらないこと」を決める",
+          "次の1〜3か月で整えるポイントを決める"
         ],
-        ctaLabel: "単院強化ロードマップを受け取る"
+        ctaLabel: "整理の進め方を相談する"
       },
       B: {
-        title: "分院展開タイプ",
-        summary: "単院の基盤が一定整っており、分院展開による成長を検討するタイミングです。",
+        title: "任せ方・体制づくりタイプ",
+        summary: "いまの負担の中心が「全部自分で抱えていること」にある可能性が高いです。任せ方と役割分担を整えることで、院長の負担が下がりやすくなります。",
         actions: [
-          "分院候補エリアと採用・育成の見通しを整理する",
-          "本院側の体制（幹部・マネージャー）の役割分担を設計する",
-          "分院展開と将来の提携・統合の選択肢をセットで検討する"
+          "任せたい領域と、任せにくい領域を切り分ける",
+          "院内の役割・意思決定のルールを整える",
+          "採用・育成・評価の「回し方」をシンプルにする"
         ],
-        ctaLabel: "分院計画テンプレートを受け取る"
+        ctaLabel: "任せ方を相談する"
       },
       C: {
-        title: "提携・統合適合タイプ",
-        summary: "提携・統合を前提とした議論を進めることで、院長・スタッフ双方にとって最適な形を探れる段階です。",
+        title: "方向性の見直しタイプ",
+        summary: "「このままでいいのか」という不安が強い状態です。答えを急ぐより、価値観・制約・優先順位を整理し直すことで、納得できる方向性が見えてきます。",
         actions: [
-          "ご自身とクリニックの「譲れない条件」を棚卸しする",
-          "複数のスキーム（提携・統合・共同出資など）を比較検討する",
-          "信頼できる第三者と一緒に条件整理と交渉方針を固める"
+          "院長として「譲れない条件」を言語化する",
+          "いまの医院の強み・弱み・制約を整理する",
+          "短期の整えどころと、中長期の方向性を切り分ける"
         ],
-        ctaLabel: "個別相談の候補日程を確認する"
+        ctaLabel: "方向性の整理を相談する"
       }
     };
 
@@ -2075,20 +2095,20 @@
     var quizData = [
       {
         id: "growth-stage",
-        text: "現在のクリニックの成長ステージに最も近いものは？",
+        text: "いま一番近い感覚はどれですか？",
         options: [
           {
-            label: "まずは単院の収益性と組織を固めたい",
+            label: "頭の中が散らかっていて、まずは整理したい",
             value: "single-focus",
             scores: { A: 2, B: 0, C: 0 }
           },
           {
-            label: "単院は安定しており、分院展開を検討している",
+            label: "全部自分で抱えていて、任せ方を整えたい",
             value: "branching",
             scores: { A: 0, B: 2, C: 1 }
           },
           {
-            label: "提携・統合の提案が来ており、比較検討したい",
+            label: "このままでいいのか不安で、方向性を見直したい",
             value: "partnership",
             scores: { A: 0, B: 1, C: 2 }
           }
@@ -2096,20 +2116,20 @@
       },
       {
         id: "time-horizon",
-        text: "今、最も意識している時間軸は？",
+        text: "いま一番しんどいのは、どのあたりですか？",
         options: [
           {
-            label: "3〜5年の単院強化と安定",
+            label: "判断が多すぎて、優先順位がつけられない",
             value: "3-5-single",
             scores: { A: 2, B: 1, C: 0 }
           },
           {
-            label: "3〜7年での分院展開と拡大",
+            label: "スタッフや採用のことまで全部自分で背負っている",
             value: "3-7-multi",
             scores: { A: 0, B: 2, C: 1 }
           },
           {
-            label: "5〜10年先を見据えた出口・提携・統合",
+            label: "気持ちが追いつかず、将来の方向性が不安",
             value: "5-10-exit",
             scores: { A: 0, B: 0, C: 2 }
           }
@@ -2117,20 +2137,20 @@
       },
       {
         id: "team-structure",
-        text: "現状の幹部・マネジメント体制は？",
+        text: "いまの院内の状態に近いものは？",
         options: [
           {
-            label: "院長中心で、幹部層はこれから整えていきたい",
+            label: "院長中心で回っていて、任せられる人が少ない",
             value: "leader-centric",
             scores: { A: 2, B: 0, C: 0 }
           },
           {
-            label: "本院の幹部層はおおむね整っている",
+            label: "任せられる人はいるが、役割やルールが曖昧",
             value: "core-ready",
             scores: { A: 0, B: 2, C: 1 }
           },
           {
-            label: "現幹部の将来も含めて、外部との連携を検討したい",
+            label: "体制だけでなく、医院の方向性そのものを見直したい",
             value: "core-partnership",
             scores: { A: 0, B: 1, C: 2 }
           }
@@ -2138,20 +2158,20 @@
       },
       {
         id: "offer-status",
-        text: "提携・統合などの具体的なオファー状況は？",
+        text: "相談相手について、近いものは？",
         options: [
           {
-            label: "まだ具体的なオファーはなく、情報収集中",
+            label: "相談できる相手がほとんどいない",
             value: "no-offer",
             scores: { A: 2, B: 1, C: 0 }
           },
           {
-            label: "いくつかの企業から声がかかり始めている",
+            label: "相談はできるが、状況を分かってもらいにくい",
             value: "some-offer",
             scores: { A: 0, B: 2, C: 1 }
           },
           {
-            label: "複数社と具体的な条件の話が進み始めている",
+            label: "誰かに話すほど、余計に迷いが増える",
             value: "multi-offer",
             scores: { A: 0, B: 0, C: 2 }
           }
@@ -2159,20 +2179,20 @@
       },
       {
         id: "risk",
-        text: "院長として今一番避けたいリスクは？",
+        text: "いま一番避けたいことは？",
         options: [
           {
-            label: "拙速な分院展開で単院まで不安定になること",
+            label: "疲れたまま判断して、後悔すること",
             value: "single-risk",
             scores: { A: 2, B: 1, C: 0 }
           },
           {
-            label: "チャンスを逃し、成長のタイミングを逸すること",
+            label: "全部抱えたまま、体力・気力が尽きること",
             value: "miss-chance",
             scores: { A: 0, B: 2, C: 1 }
           },
           {
-            label: "スタッフや患者さんにとって不本意な統合になること",
+            label: "このまま続けて、医院も自分も行き詰まること",
             value: "bad-integration",
             scores: { A: 0, B: 1, C: 2 }
           }
@@ -2183,19 +2203,19 @@
         text: "今後の院長ご自身の働き方イメージは？",
         options: [
           {
-            label: "臨床を続けつつ、組織づくりに腰を据えて取り組みたい",
+            label: "まずは「いまの負担」を減らし、落ち着きを取り戻したい",
             value: "clinical-organization",
             scores: { A: 2, B: 1, C: 0 }
           },
           {
             label:
-              "現場から少し離れつつ、複数院のマネジメントに集中したい",
+              "現場と経営の両方を回せるように、任せ方を整えたい",
             value: "multi-manager",
             scores: { A: 0, B: 2, C: 1 }
           },
           {
             label:
-              "無理なく徐々にバトンを渡しながら、次のステージに備えたい",
+              "働き方や方向性も含めて、一度見直したい",
             value: "handover",
             scores: { A: 0, B: 0, C: 2 }
           }
@@ -2203,22 +2223,22 @@
       },
       {
         id: "finance",
-        text: "財務面の大まかなスタンスは？",
+        text: "数字や経営の情報について、近い感覚は？",
         options: [
           {
-            label: "まずは単院での利益率とキャッシュフローを最大化したい",
+            label: "数字も気になるが、まずは優先順位を整理したい",
             value: "single-finance",
             scores: { A: 2, B: 1, C: 0 }
           },
           {
             label:
-              "ある程度の投資を前提に、分院展開で全体の規模を伸ばしたい",
+              "数字は見ているが、現場の負担が大きく回りきらない",
             value: "multi-finance",
             scores: { A: 0, B: 2, C: 1 }
           },
           {
             label:
-              "将来的な資本提携・統合も視野に入れ、選択肢を広く持っておきたい",
+              "数字のことを考えるほど不安になり、方向性が揺れる",
             value: "capital",
             scores: { A: 0, B: 1, C: 2 }
           }
@@ -2229,17 +2249,17 @@
         text: "今、一番欲しい情報は？",
         options: [
           {
-            label: "単院の生産性改善や組織づくりの具体事例",
+            label: "抱えすぎをほどくための整理の仕方",
             value: "single-info",
             scores: { A: 2, B: 1, C: 0 }
           },
           {
-            label: "分院展開の失敗・成功事例や分院判断の基準",
+            label: "任せ方・体制づくりの具体例（院内の回し方）",
             value: "multi-info",
             scores: { A: 0, B: 2, C: 1 }
           },
           {
-            label: "提携・統合のスキームや、実際に統合した後のリアル",
+            label: "方向性を見直すときの考え方・判断の仕方",
             value: "partnership-info",
             scores: { A: 0, B: 1, C: 2 }
           }
@@ -2251,18 +2271,18 @@
         options: [
           {
             label:
-              "腰を据えて検討したいが、方向性はそろそろ固めたい",
+              "腰を据えて整理したいが、まずは落ち着きたい",
             value: "steady",
             scores: { A: 2, B: 1, C: 0 }
           },
           {
-            label: "1〜2年以内には、大きな一手を打つ可能性が高い",
+            label: "早めに手を打たないと、負担が限界になりそう",
             value: "2y",
             scores: { A: 0, B: 2, C: 1 }
           },
           {
             label:
-              "すでに具体的な打ち手を検討中で、条件次第では早めに動きたい",
+              "すでに限界が近く、まずは相談して整理したい",
             value: "now",
             scores: { A: 0, B: 0, C: 2 }
           }
@@ -2274,19 +2294,19 @@
         options: [
           {
             label:
-              "今のメンバーと一緒に、単院をより良くしていきたい",
+              "今のメンバーと落ち着いて回せる状態に戻したい",
             value: "staff-single",
             scores: { A: 2, B: 1, C: 0 }
           },
           {
             label:
-              "本院と分院で、幹部メンバーの成長機会を増やしたい",
+              "任せ方や役割分担を整えて、院長の負担を減らしたい",
             value: "staff-multi",
             scores: { A: 0, B: 2, C: 1 }
           },
           {
             label:
-              "統合後もスタッフの雇用と成長機会をきちんと守りたい",
+              "院内の価値観や方向性も含めて、見直したい",
             value: "staff-partnership",
             scores: { A: 0, B: 1, C: 2 }
           }
