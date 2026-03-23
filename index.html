@@ -1004,6 +1004,63 @@
       color: #fff;
       flex-shrink: 0;
     }
+    /* 中盤用の控えめCTA（PC/スマホ共通） */
+    .cta-soft {
+      padding: 24px 20px;
+      background: #f8fafc;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .cta-soft-inner {
+      max-width: 560px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .cta-soft-lead {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-sub);
+      line-height: 1.7;
+    }
+    .cta-soft-title {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.5;
+    }
+    .cta-soft-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .cta-soft .btn {
+      width: 100%;
+      border-radius: 8px;
+    }
+    @media (max-width: 767px) {
+      .cta-soft-lead {
+        font-size: 12px;
+        white-space: nowrap;
+      }
+      .cta-soft-title {
+        font-size: 20px;
+        white-space: nowrap;
+      }
+    }
+    @media (min-width: 768px) {
+      .cta-soft { padding: 28px 24px; }
+      .cta-soft-title { font-size: 26px; }
+      .cta-soft-actions {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .cta-soft-actions .btn {
+        width: auto;
+        min-width: 220px;
+      }
+    }
 
     .accordion-panel-inner {
       padding: 0 14px 12px 14px;
@@ -1314,7 +1371,7 @@
         box-sizing: border-box;
       }
       /* テキストブロックを中央に寄せて読みやすく（FV・CTA・フォームは除く） */
-      section:not(.hero-banner-section):not(.cta-center) .container.section-inner {
+      section:not(.hero-banner-section):not(.cta-center):not(.cta-soft) .container.section-inner {
         max-width: 360px;
         margin-left: auto;
         margin-right: auto;
@@ -1472,16 +1529,16 @@
   <section class="hero hero-banner-section">
     <div class="container hero-banner-wrap">
       <img src="assets/hero-banner-replace.png" alt="経営に疲れてしまった院長へ。ひとりで抱えていませんか。院長限定・非公開の相談コミュニティ" class="hero-banner-img" width="1200" height="auto" />
-      <p class="lp-text" style="margin-top:14px;text-align:center;font-size:14px;color:var(--text-sub);">ここは、院長が<span class="key">一度立ち止まって整理する</span>ための相談の入口です。営業や勧誘はありません。</p>
+      <p class="lp-text" style="margin-top:14px;text-align:center;font-size:14px;color:var(--text-sub);">ここは、院長が<span class="key">一度立ち止まって整理する</span>ための<br class="br-sp" />相談の入口です。営業や勧誘はありません。</p>
     </div>
   </section>
 
   <!-- ②共感：経営に疲れている状態（共感）→③このままでいいのか（不安） -->
   <section style="background:#fff;">
     <div class="container section-inner">
-      <h2 class="section-title section-title-lg section-title-hero">医院は回っているのに、<br /><span class="key">院長だけが苦しい</span>。そんな状態になっていませんか？</h2>
-      <p class="lp-text" style="margin-top:12px;font-size:15px;color:var(--text-sub);">診療、採用、スタッフ管理、クレーム対応、数字のこと。</p>
-      <p class="lp-text" style="margin-top:8px;font-size:15px;color:var(--text-sub);">すべてを抱えていると、いつの間にか「休めない」「決められない」状態になりがちです。</p>
+      <h2 class="section-title section-title-lg section-title-hero">医院は回っているのに、<br class="br-sp" /><span class="key">院長だけが苦しい。</span><br class="br-sp" />そんな状態になっていませんか？</h2>
+      <p class="lp-text" style="margin-top:12px;font-size:15px;color:var(--text-sub);">診療、採用、スタッフ管理、クレーム対応、<br class="br-sp" />数字のこと。</p>
+      <p class="lp-text" style="margin-top:8px;font-size:15px;color:var(--text-sub);">すべてを抱えていると、いつの間にか「休めない」<br class="br-sp" />「決められない」状態になりがちです。</p>
       <ul class="check-box-list" style="margin-top:14px;">
         <li class="check-box-item"><span>スタッフや採用のことまで全部自分で背負っていて、ずっと気が抜けない</span></li>
         <li class="check-box-item"><span>医院は安定しているのに、院長自身が疲れてしまっている</span></li>
@@ -1512,7 +1569,7 @@
   <section style="background:#fff;">
     <div class="container section-inner">
       <h2 class="section-title section-title-lg section-title-hero">同じように抱えている院長は、実は少なくありません</h2>
-      <p class="diff-intro">外からは順調に見えても、院長の内側は限界に近い。そんな声は珍しくありません。</p>
+      <p class="diff-intro">外からは順調に見えても、院長の内側は限界に近い。<br class="br-sp" />そんな声は珍しくありません。</p>
       <p class="diff-intro" style="margin-top:10px;">ここは誰かに評価される場ではなく、<span class="key">院長同士で「整理」するための場</span>です。</p>
       <div class="diff-compare">
         <div class="diff-other">
@@ -1535,6 +1592,18 @@
           </ul>
           <p class="diff-us-note">目的は、何かを決めさせることではなく、<span class="key">院長が一度立ち止まって整理すること</span>です。</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 中間CTA（控えめ） -->
+  <section class="cta-soft" aria-label="中間CTA">
+    <div class="container cta-soft-inner">
+      <p class="cta-soft-lead">ここまで読んで「少し整理したい」と感じた方へ。</p>
+      <h2 class="cta-soft-title">まずは話を聞くだけでも大丈夫です</h2>
+      <div class="cta-soft-actions">
+        <button type="button" class="btn btn-primary btn-lg" data-scroll="form">無料で相談する</button>
+        <button type="button" class="btn btn-outline btn-lg" data-scroll="quiz-section" data-quiz-open="true">院長向け 3分診断を受ける</button>
       </div>
     </div>
   </section>
@@ -1657,8 +1726,8 @@
   <!-- ⑧CTA：方向性整理の相談の入口・営業なし -->
   <section id="cta-mid" class="cta-center" style="padding:28px 20px;">
     <div class="container" style="text-align:center;max-width:400px;margin:0 auto;">
-      <p style="color:rgba(255,255,255,0.95);font-size:14px;margin:0 0 8px 0;">話を聞くだけ・質問だけでも歓迎です。勧誘はしません。</p>
-      <h2 class="section-title section-title-lg" style="color:#fff;margin-bottom:16px;text-shadow:0 1px 2px rgba(0,0,0,0.2);">院長が一度立ち止まって整理する、<strong style="font-weight:800;">相談の入口</strong></h2>
+      <p style="color:rgba(255,255,255,0.95);font-size:14px;margin:0 0 8px 0;">話を聞くだけ・質問だけでも歓迎です。<br />勧誘はしません。</p>
+      <h2 class="section-title section-title-lg" style="color:#fff;margin-bottom:16px;text-shadow:0 1px 2px rgba(0,0,0,0.2);">院長が一度立ち止まって<br />整理する、<strong style="font-weight:800;">相談の入口</strong></h2>
       <button type="button" class="btn btn-cta-large" data-scroll="form">無料で相談する</button>
       <div class="cta-or" style="margin:16px 0;font-size:13px;color:rgba(255,255,255,0.9);">または</div>
       <button type="button" class="quiz-cta-mid-btn" style="background:#fff;color:#1e293b;border:2px solid #1e293b;width:100%;padding:14px 20px;font-size:15px;font-weight:700;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;" id="quiz-cta-mid-btn" data-scroll="quiz-section" data-quiz-open="true" aria-label="院長向け 3分診断を受ける">
